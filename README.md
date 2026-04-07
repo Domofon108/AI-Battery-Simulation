@@ -1,198 +1,215 @@
-🔋 AI Battery Simulation
+```markdown
+# 🔋 AI Battery Simulation
 
+Physics-based battery modeling using **PyBaMM, electrochemistry, and AI**
 
-Physics-based battery modeling using PyBaMM, electrochemistry, and AI
+This repository accompanies my **AI Battery Simulation** series exploring how electrochemistry, physics-based modeling, and AI come together to simulate and understand batteries.
 
-This repository accompanies my AI Battery Simulation series exploring how:
+---
 
-⚡ Electrochemistry
-⚡ Physics-based modeling
-⚡ Data science
-⚡ AI
+## 🎯 Goal
 
-come together to simulate and understand batteries.
+Build a step-by-step bridge from:
 
-🎯 Goal of This Repository
-
-The goal is to build a step-by-step bridge from:
-
-Fundamental electrochemistry → Physics-based models → AI-ready digital twins
+**Electrochemistry → Physics-based Models → AI-ready Digital Twins**
 
 This repository moves from:
 
-• Basic equations
-• Equivalent circuit models
-• Single particle models
-• Pseudo-2D DFN models
-• Parameter sets
-• AI-ready simulations
+- Fundamental equations  
+- Equivalent circuit models  
+- Single particle models  
+- Pseudo-2D (DFN) models  
+- Parameter presets  
+- AI-ready simulations  
 
-📚 Series Structure
-📘 Part 1 — Electrochemistry & Battery Modeling
+---
+
+## 📚 Series Overview
+
+### 📘 Part 1 — Electrochemistry & Battery Modeling
 
 Fundamental equations:
 
-• Nernst equation
-• Butler–Volmer kinetics
-• Fick diffusion
+- Nernst equation  
+- Butler–Volmer kinetics  
+- Fick diffusion  
 
 Foundation of physics-based battery models.
 
-📗 Part 2 — Solid-State Diffusion
+---
+
+### 📗 Part 2 — Solid-State Diffusion
 
 Lithium diffusion inside electrode particles:
 
-• Rate limitations
-• Performance impact
-• Aging mechanisms
+- Rate limitations  
+- Performance impact  
+- Aging mechanisms  
 
-📙 Part 3 — Battery Model Overview
+---
+
+### 📙 Part 3 — Battery Model Overview
 
 Comparison of:
 
-• ECM
-• SPM
-• Pseudo-2D
-• AI-based models
+- ECM  
+- SPM  
+- Pseudo-2D  
+- AI-based models  
 
-📘 Part 4 — Equivalent Circuit Models (ECM)
+---
 
-Battery modeling using:
+### 📘 Part 4 — Equivalent Circuit Models (ECM)
 
-• RC networks
-• Thevenin models
-• Real-time simulation
+- RC networks  
+- Thevenin models  
+- Real-time simulation  
 
-📗 Part 5 — Battery Simulation in Python
+---
 
-Introduction to:
+### 📗 Part 5 — Battery Simulation in Python
 
-• PyBaMM
-• Model execution
-• Data visualization
-• Simulation workflow
+- PyBaMM introduction  
+- Model execution  
+- Visualization  
+- Analysis  
 
-📙 Part 6 — Single Particle Model (SPM)
+---
+
+### 📙 Part 6 — Single Particle Model (SPM)
 
 Physics-based model:
 
-• Solid diffusion
-• Reaction kinetics
-• Voltage prediction
+- Solid diffusion  
+- Reaction kinetics  
+- Voltage prediction  
 
-📘 Part 7 — Building SPM in PyBaMM
+---
 
-Practical notebook:
-
-SPM_full_guide.ipynb
-
-Includes:
-
-• Running simulation
-• Parameter inspection
-• Result visualization
-
-📗 Part 8 — Pseudo-2D (DFN) Model
-
-Full electrochemical battery model:
-
-• Electrolyte transport
-• Solid diffusion
-• Reaction kinetics
-• Spatial gradients
-
-📙 Part 9 — Building Pseudo-2D Model in PyBaMM
+### 📘 Part 7 — Building SPM in PyBaMM
 
 Notebook:
 
-DFN_comparison.ipynb
+```
+
+SPM_full_guide.ipynb
+
+```
 
 Includes:
 
-• DFN simulation
-• Model comparison
-• Analysis
+- Running simulation  
+- Parameter inspection  
+- Visualization  
 
-📘 Part 10 — PyBaMM Parameter Sets
+---
 
-Available chemistry presets:
+### 📗 Part 8 — Pseudo-2D (DFN) Model
 
-Parameter Set	Chemistry
-Chen2020	NMC811 / Graphite
-OKane2022	NMC / Graphite
-ORegan2022	High-energy NMC
-Prada2013	LFP
-Chayambuka2022	Sodium-ion
+Full electrochemical model:
+
+- Electrolyte transport  
+- Solid diffusion  
+- Reaction kinetics  
+- Spatial gradients  
+
+---
+
+### 📙 Part 9 — Building Pseudo-2D (DFN) in PyBaMM
+
+Notebook:
+
+```
+
+DFN_comparison.ipynb
+
+```
+
+Includes:
+
+- DFN simulation  
+- Model comparison  
+- Result analysis  
+
+---
+
+### 📘 Part 10 — PyBaMM Parameter Sets
+
+Available parameter presets:
+
+| Parameter Set | Chemistry |
+|---------------|-----------|
+| Chen2020 | NMC811 / Graphite |
+| OKane2022 | NMC / Graphite |
+| ORegan2022 | High-energy NMC |
+| Prada2013 | LFP |
+| Chayambuka2022 | Sodium-ion |
 
 Files:
+
+```
 
 Chen2020.csv
 OKane2022.csv
 ORegan2022.csv
 Prada2013.csv
 Chayambuka2022.csv
-🧠 Why This Matters
+
+```
+
+---
+
+## 🧠 Why This Repository
 
 Battery modeling enables:
 
-⚡ Digital twins
-⚡ Faster development
-⚡ Reduced experimental cost
-⚡ AI integration
-⚡ Better battery design
+- Digital twins  
+- Faster development  
+- Reduced experimental cost  
+- AI integration  
+- Better battery design  
 
-This repository shows how to transition from:
+This repository demonstrates how to move from:
 
-Physics → Simulation → AI
+**Physics → Simulation → AI**
 
-🛠 Tools Used
+---
 
-Python
-PyBaMM
-NumPy
-SciPy
-Matplotlib
-Jupyter Notebook
+## 🛠 Tools
 
-🚀 Future Work
+- PyBaMM  
+- Python  
+- NumPy  
+- SciPy  
+- Matplotlib  
+- Jupyter Notebook  
+
+---
+
+## 🚀 Future Work
 
 Upcoming topics:
 
-• Hybrid Physics-AI models
-• Parameter estimation
-• Battery digital twins
-• SoH prediction
-• Real-world data integration
+- Hybrid physics-ML models  
+- Parameter estimation  
+- Battery digital twins  
+- SoH prediction  
+- Real-world data integration  
 
-📂 Repository Structure
-AI-Battery-Simulation
-│
-├── SPM_full_guide.ipynb
-├── DFN_comparison.ipynb
-├── Chen2020.csv
-├── OKane2022.csv
-├── ORegan2022.csv
-├── Prada2013.csv
-├── Chayambuka2022.csv
-└── README.md
-👨‍🔬 Author
+---
 
-Dmitrii Makhov
-Electrochemist | Battery Modeling | AI
+## 👨‍🔬 Author
 
-⭐ Support
+**Dmitrii Makhov**  
+Electrochemist | Battery Modeling | AI  
+
+---
+
+## ⭐ Support
 
 If you find this repository useful:
 
-⭐ Star the repository
-🔁 Share with colleagues
-👨‍🔬 Follow the series
-
-🔗 Related Topics
-
-Battery Modeling
-Electrochemistry
-Digital Twin
-PyBaMM
-AI in Batteries
-Energy Storage
+- Star the repository  
+- Share with colleagues  
+- Follow the series  
+```
